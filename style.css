@@ -18,17 +18,18 @@ header {
   /*border: 2px solid black;*/
   background-image: url(https://wallpapers.com/images/hd/sunflowers-and-roses-kjij3hy57bb49sbx.jpg);
   background-size: cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: bottom left, bottom right, bottom center;
   text-align: center;
   padding: 100px;
 }
 
 header h1 {
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display SCSofi", serif;
   font-size: 3rem;
   margin-bottom: 30px;
-  text-shadow: 4px 0px 4px aliceblue;
+  color: aliceblue;
+  text-shadow: 5px 0px 5px green;
 }
 
 header p {
@@ -38,19 +39,20 @@ header p {
   font-size: 2rem;
   margin-bottom: 30px;
   font-style: italic;
-  text-shadow: 4px 0px 4px aliceblue;
+  color: aliceblue;
+  text-shadow: 5px 0px 5px green;
 }
 
 header a {
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   line-height: 40px;
   display: inline-block;
   background-color: green;
   color: aliceblue;
   text-decoration: none;
-  margin: 2px auto;
-  border-radius: 8px;
+  margin: 5px auto;
+  border-radius: 7px;
 }
 
 /* nav sec */
@@ -58,15 +60,17 @@ header a {
 nav {
   /*border: 2px solid black;*/
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background-color: aliceblue;
+  position: sticky;
+  top: 0px;
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
   color: green;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 /* our- menu sec */
@@ -76,7 +80,7 @@ nav a {
 #contact-us,
 footer {
   width: 80%;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 #our-menu h2,
@@ -85,6 +89,7 @@ footer {
   font-family: "Playfair Display SC", serif;
   font-size: 2em;
   padding: 10px 0;
+  margin-bottom: 20px;
 }
 
 .menu-list h3 {
@@ -184,9 +189,10 @@ form div {
 footer p {
   text-align: center;
   font-size: 0.9rem;
+  text-align: center;
+  color: green;
 }
 
-#footer {
-  text-align: right;
+footer a {
   color: green;
 }
