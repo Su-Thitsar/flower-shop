@@ -1,198 +1,247 @@
+/* ===============================
+       Global Styles
+       =============================== */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
-/* header sec */
+
 body {
-  background-color: aliceblue;
-  color: green;
-  padding: 50px;
+  font-family: "Lato", sans-serif;
+  background-color: #f4f9f4;
+  color: #2f5d3a;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* ===============================
+       Header Section
+       =============================== */
 header {
-  /*border: 2px solid black;*/
-  background-image: url(https://wallpapers.com/images/hd/sunflowers-and-roses-kjij3hy57bb49sbx.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://wallpapers.com/images/hd/sunflowers-and-roses-kjij3hy57bb49sbx.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom left, bottom right, bottom center;
+  background-position: center;
   text-align: center;
-  padding: 100px;
+  padding: 120px 20px;
+  color: #ffffff;
 }
 
 header h1 {
-  font-family: "Playfair Display SCSofi", serif;
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: aliceblue;
-  text-shadow: 5px 0px 5px green;
-}
-
-header p {
-  text-align: center;
-  padding: 10px;
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  font-style: italic;
-  color: aliceblue;
-  text-shadow: 5px 0px 5px green;
-}
-
-header a {
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  background-color: green;
-  color: aliceblue;
-  text-decoration: none;
-  margin: 5px auto;
-  border-radius: 7px;
-}
-
-/* nav sec */
-
-nav {
-  /*border: 2px solid black;*/
-  text-align: center;
-  padding: 20px;
-  background-color: aliceblue;
-  position: sticky;
-  top: 0px;
-}
-
-nav a {
-  display: inline-block;
-  text-decoration: none;
-  color: green;
-  margin: 0 25px;
-}
-
-/* our- menu sec */
-
-#our-menu,
-#about-us,
-#contact-us,
-footer {
-  width: 80%;
-  margin: 30px auto;
-}
-
-#our-menu h2,
-#about-us h2,
-#contact-us h2 {
   font-family: "Playfair Display SC", serif;
-  font-size: 2em;
-  padding: 10px 0;
+  font-size: 3.2rem;
   margin-bottom: 20px;
 }
 
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-style: italic;
+  text-shadow: #2f5d3a;
+}
+
+header a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #2f5d3a;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background-color: #2f5d3a;
+  color: #ffffff;
+}
+
+/* ===============================
+       Navigation Bar
+       =============================== */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #2f5d3a;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+/* ===============================
+       Section Layout
+       =============================== */
+section {
+  width: 85%;
+  margin: 60px auto;
+}
+
+section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ===============================
+       Menu Cards
+       =============================== */
 .menu-list h3 {
-  margin: 20px 0;
-  padding: 2px 10px;
-  border-left: 4px groove aliceblue;
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+  border-left: 5px solid #2f5d3a;
+  padding-left: 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
 }
 
 .card {
-  width: 230px;
-  padding: 10px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  margin: 0 10px;
-  display: inline-block;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.card-image-top {
-  max-width: 100%;
-  width: 400px;
-  height: 250px;
-  border-radius: 10px;
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
 }
 
 .card-title {
-  margin: 10px 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
+
 .card-text {
-  line-height: 1.3rem;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
 }
+
 .price {
   font-weight: bold;
   font-style: italic;
 }
+
 .btn-order {
-  border: none;
   width: 100%;
-  background-color: green;
   padding: 10px;
-  color: aliceblue;
-  border-radius: 5px;
-  margin: 10px 0;
+  border: none;
+  background-color: #2f5d3a;
+  color: #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* about-us sec */
+.btn-order:hover {
+  background-color: #3f7a50;
+}
 
+/* ===============================
+       About & Contact
+       =============================== */
 #about-us p,
-contact-us p,
-footer p {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5rem;
+#contact-us p {
+  line-height: 1.7rem;
   text-align: justify;
-  padding: 10px 0;
+  margin-bottom: 15px;
 }
 
-/* contact-us sec */
-
+/* ===============================
+       Contact Form
+       =============================== */
 form {
-  font-family: "Lato", sans-serif;
-  /*border: 2px solid black;*/
-  margin-top: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-form div {
-  margin-bottom: 10px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.form-label {
-  text-align: right;
-  display: inline-block;
-  padding: 10px;
-  width: 150px;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .form-control {
-  border: none;
-  width: 300px;
-  border-bottom: 2px solid green;
-  background-color: aliceblue;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
   outline: none;
 }
 
-.btnSumbit {
+.form-control:focus {
+  border-color: #2f5d3a;
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 12px;
   border: none;
-  width: 250px;
-  height: 40px;
-  background-color: green;
-  color: aliceblue;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  margin-left: 160px;
-  border-radius: 8px;
+  background-color: #2f5d3a;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-footer p {
+/* ===============================
+       Footer
+       =============================== */
+footer {
   text-align: center;
+  padding: 20px 0;
+  background-color: #e6f2ea;
   font-size: 0.9rem;
-  text-align: center;
-  color: green;
 }
 
 footer a {
-  color: green;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #2f5d3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2f5d3a;
+  font-size: 22px;
 }
